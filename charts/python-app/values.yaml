@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: kecskemethy/python-app
   pullPolicy: IfNotPresent
-  tag: fca60e
+  tag: 0907eb
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
