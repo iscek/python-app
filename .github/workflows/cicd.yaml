@@ -9,7 +9,7 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
 
       - name: Shorten commit id
@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ricardoandre9707/python-app:${{ env.COMMIT_ID }}
+          tags: kecskemethy/python-app:${{ env.COMMIT_ID }}
     outputs:
       commit_id: ${{ env.COMMIT_ID }}
 
